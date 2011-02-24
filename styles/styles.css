@@ -1,0 +1,143 @@
+html, body {
+	margin: 0;
+}
+html, body, #wrapper, #nameboxes .namebox, #scoreboard #scorerows .scorerow .hitbox, #scoreboard #scorerows .scorerow .hitbox, #totalboxes {
+	height: 100%;
+}
+html, #nameboxes, #scoreboard, #scoreboard #scorerows .scorerow, #totalboxes {
+	width: 100%;
+}
+#nameboxes, #scoreboard {
+	position: fixed;
+}
+#nameboxes, #scoreboard {
+	left: 0;
+}
+html, #nameboxes {
+	background-image: 
+		-webkit-gradient(linear, 0 0, 0 100%, 
+			from(rgba(0,0,0,0.15)), to(rgba(0,0,0,0.35)), color-stop(0.23, rgba(0,0,0,0)), color-stop(0.66, rgba(0,0,0,0)));
+}
+html {
+	background-color: #040;
+	color: #DD8;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 200%;
+	text-align: center;
+	-webkit-user-select: none;
+}
+#wrapper {
+	margin: 0 auto;
+}
+.player_won {
+	background: url(http://i69.photobucket.com/albums/i41/kornholio360/confetti.png);
+	display: table-cell;
+	font-weight: bold;
+	font-size: 200%;
+	bottom: 0;
+	top: 0;
+	padding-top: 25%;
+	position: fixed;
+	text-shadow: 3px 2px 10px #000;
+	width: 50%;
+	z-index: 2;
+}
+.won_player1 {
+	left: 0%;
+}
+.won_player2 {
+	right: 0%;
+}
+#nameboxes {
+	background-color: #311;
+	box-shadow: 0px 3px 20px rgba(0,0,0,0.5);
+	height: 5%;
+	padding: 1% 0%;
+	top: 0;
+}
+#nameboxes, #totalboxes {
+	-webkit-user-select: text;
+	z-index: 10;
+}
+		#nameboxes .namebox {
+			background: transparent;
+			border: 0;
+			display: inline-block;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+			width: 49%;
+		}
+		#nameboxes .namebox:first-child {
+			border-right: #DD8 1px solid;
+		}
+#scoreboard {
+	bottom: 0;
+	padding: 2% 0%;
+	top: 9%;
+}
+	#scoreboard #scorerows {
+		height: 80%;
+		text-align: center;
+		width: 20%;
+	}
+		#scoreboard #scorerows .scorerow {
+			border-top: 1px #DD8 solid;
+			display: inline-block;
+			left: 200%;
+			line-height: 200%;
+			margin: -1px auto 0 auto;
+			position: relative;
+		}
+		#scoreboard #scorerows .scorerow:first-child {
+			border-top: none;
+		}
+			#scoreboard #scorerows .scorerow .point_value {
+				margin: 0 7%;
+				position: relative;
+				top: -32%;
+			} 
+			#scoreboard #scorerows .scorerow .hitbox {
+				background: rgba(224, 224, 128, 0.25);
+				display: inline-block;
+				font-size: 125%;
+				width: 35%;
+			}
+				#scoreboard #scorerows .scorerow .player1 {	
+					border-right: 1px #DD8 solid;
+				}
+				#scoreboard #scorerows .scorerow .player2 {	
+					border-left: 1px #DD8 solid;
+				}
+				#scoreboard #scorerows .scorerow .hitbox .point_marker {
+					border-radius: 50%;
+					border: 1px transparent solid;
+					display: inline-block;
+					height: 25%;
+					width: 70%;
+				}
+				#scoreboard #scorerows .scorerow .hitbox .scored {
+					border-color: #DD8;
+					text-decoration: none !important;
+				}
+				.closed {
+					border-color: rgba(224, 224, 128, 0.35);
+					color: rgba(224, 224, 128, 0.35) !important;
+					text-decoration: line-through;
+				}
+				#scoreboard #scorerows .scorerow .hitbox .opened {}
+	#scoreboard #totalboxes {
+		position: fixed;
+		top: 80%;
+		bottom: 0;
+	}
+		#scoreboard #totalboxes .totalbox  {
+			background: transparent;
+			display: inline-block;
+			font-size: 300%;
+			height: 20%;
+			border: none;
+			text-shadow: 3px 2px 10px #000;
+			width: 45%;
+		}
