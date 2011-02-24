@@ -1,4 +1,7 @@
 {
 	"name" : "CricketKeeper",
-	"version" : "1.0"
+	"version" : "1.0",
+	"icons" : {
+		"240" : "images/icon.png"
+	}
 }
